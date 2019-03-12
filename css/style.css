@@ -48,7 +48,7 @@ footer {
     height: 1.5em;
     padding-top:20px;
 }
-header nav ul {
+header nav ul { /*styling weg, no overflow*/
     list-style-type: none;
     margin: 0;
     overflow: hidden;
@@ -57,8 +57,8 @@ header nav ul {
 header nav .level_1 li {
     font-weight: bold;
     font-size: 15pt;
+    padding-right: 40px;
     float: left;
-    padding-right: 20px;
 }
 
 header nav .level_1 li a {
@@ -68,18 +68,16 @@ header nav .level_1 li a {
 
 header nav .level_2 {
     padding: 0;
-    transition: all 0.5s ease-in-out;
 }
 
 header nav .level_2 li {
-    display: block;
+    display: none;
     text-align: left;
     line-height: 50px;
     font-weight: normal;
     font-size: 14pt;
     float: none;
     padding: 10px;
-    transition: all 0.5s ease-in-out;
 }
 
 header nav .level_2 li:hover {
@@ -88,7 +86,6 @@ header nav .level_2 li:hover {
 
 header nav .level_2 li:hover a {
     color: white;
-    transition: all 0.5s ease-in-out;
 }
 
 .first, .second {
@@ -99,6 +96,6 @@ header nav .level_2 li:hover a {
     z-index: 1;
 }
 
-header nav .level_1 li:hover .level_2 {
+header nav .level_1 li:hover .level_2 li{
     display:block;
 }
