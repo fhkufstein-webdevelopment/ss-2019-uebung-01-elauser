@@ -1,16 +1,13 @@
-
-
-
 body {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:14px;
     margin:0;
     padding:0;
 }
-.inner {
-    width: 990px;
-    margin-left: auto;
-    margin-right: auto;
+.inner{
+    width:990px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .logo {
     font-size:30px;
@@ -48,13 +45,60 @@ body {
 
 footer {
     background-color:#f8f9fa;
-    height: 150px;
+    height: 1.5em;
     padding-top:20px;
 }
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
 
+header nav .level_1 li {
+    font-weight: bold;
+    font-size: 15pt;
+    float: left;
+    padding-right: 20px;
+}
 
+header nav .level_1 li a {
+    color: #337ab7;
+    text-decoration: none;
+}
 
+header nav .level_2 {
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+}
 
+header nav .level_2 li {
+    display: block;
+    text-align: left;
+    line-height: 50px;
+    font-weight: normal;
+    font-size: 14pt;
+    float: none;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
 
+header nav .level_2 li:hover {
+    background-color: #337ab7;
+}
 
+header nav .level_2 li:hover a {
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
 
+.first, .second {
+    position: absolute;
+    display: none;
+    background-color: white;
+    min-width: 300px;
+    z-index: 1;
+}
+
+header nav .level_1 li:hover .level_2 {
+    display:block;
+}
